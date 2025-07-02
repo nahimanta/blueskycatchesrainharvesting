@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Sky Catches Rain Harvesting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap');
+        
+        :root {
+            --primary-blue: #2185d0;
+            --secondary-blue: #5ab9ea;
+            --dark-green: #2c6e49;
+            --light-green: #7fc8a9;
+            --neutral-gray: #f5f5f5;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--light-green) 100%);
+        }
+        
+        .benefit-card {
+            transition: transform 0.3s ease;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        footer {
+            background-color: #273036;
+            color: white;
+        }
+        
+        .disclaimer {
+            font-size: 0.85rem;
+            line-height: 1.4;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content {
+                padding-top: 7rem;
+            }
+            
+            .stats-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1222e9da-7ce1-4eb7-9731-d62cce24c28f.png" alt="Blue Sky Catches Rain logo - blue droplet with sun rays" class="h-12 w-12">
+                <span class="text-xl font-bold text-gray-800">Blue Sky Catches Rain</span>
+            </div>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="#services" class="text-gray-700 hover:text-blue-600 transition">Services</a>
+                <a href="#benefits" class="text-gray-700 hover:text-blue-600 transition">Benefits</a>
+                <a href="#process" class="text-gray-700 hover:text-blue-600 transition">Our Process</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-blue-600 transition">Testimonials</a>
+            </div>
+            
+            <button class="md:hidden text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white">
+        <div class="container mx-auto px-4 py-20">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 hero-content">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">Sustainable Water Solutions for Hawaii</h1>
+                    <p class="text-xl mb-8">Specializing in rain harvesting systems that capture Hawaii's abundant rainfall for residential and commercial use.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contact" class="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Get a Quote</a>
+                        <a href="#process" class="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-700 transition">Learn How</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 mt-12 md:mt-0">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9142a7be-91fd-450a-b948-22fdf237ef5e.png" alt="Modern rain harvesting system installed on a Hawaiian home with lush greenery in the background" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4">
+            <div class="stats-container flex justify-around text-center">
+                <div class="p-4">
+                    <h3 class="text-4xl font-bold text-blue-700 mb-2">15+</h3>
+                    <p class="text-gray-600">Years Experience</p>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-4xl font-bold text-blue-700 mb-2">500+</h3>
+                    <p class="text-gray-600">Systems Installed</p>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-4xl font-bold text-blue-700 mb-2">1M+</h3>
+                    <p class="text-gray-600">Gallons Harvested</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Rain Harvesting Services</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Residential -->
+                <div class="benefit-card bg-gray-50 rounded-lg p-6 shadow-sm hover:shadow-md">
+                    <div class="h-12 w-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Residential Systems</h3>
+                    <p class="text-gray-600">Customized rain harvesting solutions for homes of all sizes, designed to maximize water collection while complementing your property's aesthetics.</p>
+                </div>
+                
+                <!-- Commercial -->
+                <div class="benefit-card bg-gray-50 rounded-lg p-6 shadow-sm hover:shadow-md">
+                    <div class="h-12 w-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Commercial Solutions</h3>
+                    <p class="text-gray-600">Large-scale systems for businesses and agricultural operations that can significantly reduce municipal water costs and environmental impact.</p>
+                </div>
+                
+                <!-- Maintenance -->
+                <div class="benefit-card bg-gray-50 rounded-lg p-6 shadow-sm hover:shadow-md">
+                    <div class="h-12 w-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">System Maintenance</h3>
+                    <p class="text-gray-600">Comprehensive maintenance plans to keep your rain harvesting system operating at peak efficiency throughout the year.</p>
+                </div>
+            </div>
+            
+            <!-- Content Expansion Areas -->
+            <div class="mt-16">
+                <h3 class="text-2xl font-semibold mb-4">Residential Rainwater Harvesting</h3>
+                <p>This section will contain approximately 1500 words detailing our residential rainwater harvesting solutions...</p>
+                <div class="bg-gray-100 p-4 rounded mt-4">
+                    <p>[Residential rainwater harvesting content placeholder - will expand to ~1500 words]</p>
+                </div>
+                
+                <h3 class="text-2xl font-semibold mb-4 mt-8">Commercial Rainwater Harvesting</h3>
+                <p>This section will contain approximately 1500 words explaining commercial applications...</p>
+                <div class="bg-gray-100 p-4 rounded mt-4">
+                    <p>[Commercial rainwater harvesting content placeholder - will expand to ~1500 words]</p>
+                </div>
+                
+                <h3 class="text-2xl font-semibold mb-4 mt-8">System Components Explained</h3>
+                <p>Detailed technical breakdown of system components (~2000 words)...</p>
+                <div class="bg-gray-100 p-4 rounded mt-4">
+                    <p>[System components detailed explanation placeholder - will expand to ~2000 words]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Benefits of Rain Harvesting</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Cost Savings -->
+                <div class="benefit-card bg-white rounded-lg p-6 shadow-sm">
+                    <h3 class="text-xl font-bold mb-3">Reduces Water Bills</h3>
+                    <p class="text-gray-600">Harvesting rainwater can significantly reduce your dependence on municipal water systems, leading to substantial cost savings over time.</p>
+                </div>
+                
+                <!-- Environmental -->
+                <div class="benefit-card bg-white rounded-lg p-6 shadow-sm">
+                    <h3 class="text-xl font-bold mb-3">Eco-Friendly</h3>
+                    <p class="text-gray-600">Rain harvesting reduces stormwater runoff, minimizes erosion, and decreases the demand on groundwater supplies.</p>
+                </div>
+                
+                <!-- Water Quality -->
+                <div class="benefit-card bg-white rounded-lg p-6 shadow-sm">
+                    <h3 class="text-xl font-bold mb-3">Better for Plants</h3>
+                    <p class="text-gray-600">Rainwater is naturally soft and free of chlorine and other chemicals found in treated water, making it ideal for irrigation.</p>
+                </div>
+            </div>
+            
+            <!-- Expanded Benefits Content -->
+            <div class="mt-16">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-2xl font-semibold mb-4">Economic Benefits of Rainwater Harvesting</h3>
+                    <div class="bg-gray-100 p-4 rounded mt-4">
+                        <p>[Economic benefits detailed content placeholder - will expand to ~1000 words]</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm mt-8">
+                    <h3 class="text-2xl font-semibold mb-4">Environmental Impact</h3>
+                    <div class="bg-gray-100 p-4 rounded mt-4">
+                        <p>[Environmental impact detailed content placeholder - will expand to ~1000 words]</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm mt-8">
+                    <h3 class="text-2xl font-semibold mb-4">Water Security and Resilience</h3>
+                    <div class="bg-gray-100 p-4 rounded mt-4">
+                        <p>[Water security detailed content placeholder - will expand to ~1000 words]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="process" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Rain Harvesting Process</h2>
+            
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3c97aac1-ebcd-4e14-9b61-60d085b2d623.png" alt="Diagram of a rain harvesting system showing components: roof catchment, gutter, leaf filter, storage tank, and distribution system" class="rounded-lg">
+                </div>
+                <div class="md:w-1/2">
+                    <div class="flex mb-6">
+                        <div class="flex-shrink-0">
+                            <span class="h-12 w-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">1</span>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold mb-2">Initial Consultation</h3>
+                            <p class="text-gray-600">We assess your property's catchment potential and water needs to design a customized solution.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex mb-6">
+                        <div class="flex-shrink-0">
+                            <span class="h-12 w-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">2</span>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold mb-2">System Design</h3>
+                            <p class="text-gray-600">Our engineers create a detailed plan optimized for Hawaii's climate and rainfall patterns.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex mb-6">
+                        <div class="flex-shrink-0">
+                            <span class="h-12 w-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">3</span>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold mb-2">Installation</h3>
+                            <p class="text-gray-600">Our certified technicians install your system with minimal disruption to your property.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <span class="h-12 w-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">4</span>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold mb-2">Activation & Training</h3>
+                            <p class="text-gray-600">We ensure your system is operating perfectly and train you on its maintenance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Detailed Process Content -->
+            <div class="mt-16">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-2xl font-semibold mb-4">Step-by-Step Rainwater Collection Process</h3>
+                    <div class="bg-gray-100 p-4 rounded mt-4">
+                        <p>[Detailed process explanation placeholder - will expand to ~1500 words]</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm mt-8">
+                    <h3 class="text-2xl font-semibold mb-4">Rainwater Purification Methods</h3>
+                    <div class="bg-gray-100 p-4 rounded mt-4">
+                        <p>[Purification methods detailed explanation placeholder - will expand to ~1000 words]</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm mt-8">
+                    <h3 class="text-2xl font-semibold mb-4">System Maintenance Procedures</h3>
+                    <div class="bg-gray-100 p-4 rounded mt-4">
+                        <p>[Maintenance procedures detailed explanation placeholder - will expand to ~1000 words]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Customer Satisfaction</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9b8e5b2d-d00f-4306-b92b-82f3fc790ab9.png" alt="Portrait of Sarah Johnson, a satisfied homeowner" class="h-16 w-16 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Sarah Johnson</h4>
+                            <p class="text-gray-600">Honokaa Homeowner</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"Our Blue Sky system has reduced our water bill by 60% during the rainy season. The installation team was professional and left our property immaculate."</p>
+                    <div class="flex mt-4">
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e1c2f704-4220-4a14-ae05-de996b6ed5fa.png" alt="Portrait of David Chen, farm owner" class="h-16 w-16 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">David Chen</h4>
+                            <p class="text-gray-600">Farm Owner</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"As a farm owner, water is our most precious resource. Blue Sky's commercial system has transformed our operation, giving us water security during dry spells."</p>
+                    <div class="flex mt-4">
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c3a054cf-4c9c-4548-94d4-dea7625d5744.png" alt="Portrait of Maria Rodriguez, school administrator" class="h-16 w-16 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Maria Rodriguez</h4>
+                            <p class="text-gray-600">School Administrator</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"Our school's rainwater system not only saves money but serves as an educational tool. Blue Sky provided excellent training for our faculty and maintenance staff."</p>
+                    <div class="flex mt-4">
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Customer Satisfaction Content -->
+            <div class="mt-16">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-2xl font-semibold mb-4">Our Commitment to Customer Satisfaction</h3>
+                    <div class="bg-gray-100 p-4 rounded mt-4">
+                        <p>[Customer satisfaction commitment content placeholder - will expand to ~1000 words]</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm mt-8">
+                    <h3 class="text-2xl font-semibold mb-4">Case Studies</h3>
+                    <div class="bg-gray-100 p-4 rounded mt-4">
+                        <p>[Case studies demonstrating customer satisfaction - will expand to ~1500 words]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disclaimer Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Important Disclaimer</h2>
+            
+            <div class="bg-white p-8 rounded-lg shadow-sm disclaimer">
+                <h3 class="text-xl font-bold mb-4">Disclaimer Notice</h3>
+                <p class="mb-4">This disclaimer governs your use of Blue Sky Catches Rain Harvesting's website and services. By using our website, you accept this disclaimer in full.</p>
+                
+                <h4 class="font-bold mb-2">Water Quality</h4>
+                <p class="mb-4">Rainwater collected via rooftop catchment systems is not potable unless properly filtered and treated. Blue Sky Catches Rain Harvesting makes no representations about the suitability of collected rainwater for drinking purposes without appropriate treatment.</p>
+                
+                <h4 class="font-bold mb-2">System Performance</h4>
+                <p class="mb-4">Actual system performance may vary based on local rainfall patterns, roof area, tank capacity, and water usage patterns. Historical rainfall data does not guarantee future performance.</p>
+                
+                <div class="bg-gray-100 p-4 rounded mt-6">
+                    <p>[Full legal disclaimer content placeholder - will expand to ~4000 words covering all legal aspects, liabilities, guarantees, and specific Hawaii regulations]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3a09d11b-de9d-4540-bc52-a5b685b29dc1.png" alt="Blue Sky Catches Rain small logo" class="h-10 w-10">
+                        <span class="text-xl font-bold text-white">Blue Sky Catches Rain</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Sustainable water solutions for Hawaii's future.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h3 class="text-white font-bold mb-4">Services</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white">Residential</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Commercial</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Maintenance</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-white font-bold mb-4">Company</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Team</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-white font-bold mb-4">Contact</h3>
+                        <address class="text-gray-400 not-italic">
+                            <p>45-3626 A Mamane St</p>
+                            <p>Honokaa, HI 96727</p>
+                            <p class="mt-2">(808) 123-4567</p>
+                            <p>info@blueskyrains.com</p>
+                        </address>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2023 Blue Sky Catches Rain Harvesting. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile menu toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('button.md\\:hidden');
+            const mobileMenu = document.querySelector('.md\\:flex.space-x-8');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('flex');
+                mobileMenu.classList.toggle('flex-col');
+                mobileMenu.classList.toggle('absolute');
+                mobileMenu.classList.toggle('top-16');
+                mobileMenu.classList.toggle('right-4');
+                mobileMenu.classList.toggle('bg-white');
+                mobileMenu.classList.toggle('p-4');
+                mobileMenu.classList.toggle('rounded-lg');
+                mobileMenu.classList.toggle('shadow-lg');
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
